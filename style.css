@@ -3,25 +3,26 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.192);
+    background-color: white;
 }
 .container{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(212, 212, 212);
     width: 800px;
     border-radius: 15px;
 }
 .left{
     flex: 1;
     background-color: rgb(236, 188, 116);
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
 }
 .right{
     flex: 1;
@@ -85,11 +86,26 @@ body{
     border-radius: 4px;
     font-weight: bold;
 }
-table{
-    display: block;
-    margin-top: 4px;
+table,td,tr,th{
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-collapse: collapse;
+    text-align: center;
 }
 th{
-    padding: 2px 24px;
-    justify-content: center;
+    height: 40px;
+}
+td{
+    height: 30px;
+}
+table{
+    width: 400px;
+}
+.type{
+    width: 90px;
+}
+.name{
+    width: 140px;
+}
+.option{
+    width: 70px;
 }
